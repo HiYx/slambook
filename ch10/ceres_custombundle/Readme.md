@@ -15,3 +15,16 @@ cd ./build
 
 #see more detail settings by :
 ./ceres_customBundle -help
+
+
+
+0526 修改：
+
+```
+include_directories(${CERES_INCLUDE_DIRS} 
+	    "/usr/include/eigen3/")
+	    
+//options->num_linear_solver_threads = params.num_threads;
+options->num_threads = params.num_threads;
+```
+
